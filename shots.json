@@ -1,0 +1,6 @@
+[
+  { "name": "1-hero.jpg", "query": "?shot=hero" },
+  { "name": "2-foot.jpg", "query": "?shot=foot" },
+  { "name": "3-chase.jpg", "query": "?shot=chase" },
+  { "name": "4-mission.jpg", "query": "?shot=mission" }
+]
