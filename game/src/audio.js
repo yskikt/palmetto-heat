@@ -67,7 +67,7 @@ export class GameAudio {
     if (sirenOn) this.sirenOsc.frequency.setTargetAtTime(760 + Math.sin(t * 2.6) * 190, t, 0.05);
     // Radio only while driving.
     const radioAudible = state.inCar && this.station.id !== 'off';
-    this.radioGain.gain.setTargetAtTime(radioAudible ? 0.16 : 0, t, 0.15);
+    this.radioGain.gain.setTargetAtTime(radioAudible ? 0.8 : 0, t, 0.15);
     if (radioAudible) {
       this.trackT += dt;
       if (this.trackT > 16) { this.trackT = 0; this.trackIndex++; }

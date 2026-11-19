@@ -225,7 +225,7 @@ function frame() {
 
   // --- Driving / walking ---
   const drag = input.consumeDrag();
-  if (drag.x || drag.y) { camYaw -= drag.x * 0.005; camPitch = Math.max(0.06, Math.min(1.1, camPitch + drag.y * 0.004)); }
+  if (drag.x || drag.y) { camYaw -= drag.x * 0.0025; camPitch = Math.max(0.06, Math.min(1.1, camPitch + drag.y * 0.002)); }
 
   let prompt = '';
   if (bustTimer > 0) {
